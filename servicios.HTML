@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZD Legal Services</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+
+    <h1 class="title">ZD LEGAL SERVICES</h1>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="img1.png" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-rectangle" alt="Slide 2">
+                        <p>Estamos listos para ayudarte!</p>
+                        <img src="img1.png">
+                        <p>Tu mejor opción!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+  // JavaScript para hacer que el carrusel funcione
+  let currentPosition = 0;
+  const slides = document.querySelectorAll('.carousel-item');
+
+  function showSlide(position) {
+    const slideWidth = slides[0].clientWidth;
+    const newPosition = -(position * slideWidth);
+    document.querySelector('.carousel-inner').style.transform = `translateX(${newPosition}px)`;
+    currentPosition = position;
+  }
+
+  function nextSlide() {
+    if (currentPosition < slides.length - 1) {
+      currentPosition++;
+      showSlide(currentPosition);
+    }
+  }
+
+  function prevSlide() {
+    if (currentPosition > 0) {
+      currentPosition--;
+      showSlide(currentPosition);
+    }
+  }
+
+  setInterval(nextSlide, 5000); // Cambiar automáticamente cada 5 segundos
+</script>
+
+    <div class="texto1">
+        <h2>ZD Legal Services: Su Socio Confiable en Tecnología de la Información</h2
+        <p>Evaluamos, diseñamos e implementamos soluciones personalizadas para mejorar
+        la infraestructura, seguridad y relaciones con proveedores de TI. Nuestro enfoque 
+        centrado en el cliente y nuestro compromiso con la seguridad hacen de
+        nosotros el socio ideal para llevar su empresa al siguiente nivel tecnológico y de seguridad.
+        </p>
+        <h2>¿Conoce lo que ofrecemos?</h2>
+
+    </div>
+    <div class="services">
+        <div class="service" id="service1">
+            <h2>Asesoramiento y Consultoría TI</h2>
+            <p class="description">Consultoría para la adquisición de soluciones tecnológicas, evaluación de necesidades y recomendaciones de productos adecuados, así como gestión de relaciones con clientes y contratos.</p>
+        </div>
+        <div class="service" id="service2">
+            <h2>Soporte y Mantenimiento</h2>
+            <p class="description">Provisión de atención y resolución de incidencias técnicas a usuarios, mantenimiento preventivo y correctivo de hardware y software, y gestión de tickets y documentación de casos.</p>
+        </div>
+        <div class="service" id="service3">
+            <h2>Infraestructura y Redes</h2>
+            <p class="description">Configuración, mantenimiento y optimización de redes, administración de sistemas operativos y servidores, e implementación de soluciones de conectividad y VPN seguras y eficientes.</p>
+        </div>
+        <div class="service" id="service4">
+            <h2>Desarrollo de Proyectos IT</h2>
+            <p class="description">Evaluación y análisis de requerimientos tecnológicos, diseño de arquitecturas de soluciones, y documentación y modelado de procesos para asegurar soluciones alineadas con las necesidades del cliente.</p>
+        </div>
+        <div class="service" id="service5">
+            <h2>Seguridad y Cumplimiento</h2>
+            <p class="description">Realización de auditorías de seguridad informática, implementación de políticas y medidas de seguridad, y monitoreo y respuesta a incidentes de seguridad para proteger la información y los sistemas de la empresa.</p>
+        </div>
+        <div class="service" id="service6">
+            <h2>Integración y Escalabilidad</h2>
+            <p class="description">Diseño de arquitecturas de TI escalables y eficientes, asesoramiento en la implementación de soluciones en la nube, y optimización de infraestructuras existentes para maximizar el rendimiento y la sostenibilidad.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

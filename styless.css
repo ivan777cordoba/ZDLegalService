@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.title {
+    color: #333;
+    margin: 20px;
+    text-align: center;
+}
+
+
+.texto1 {
+    text-align: center;
+}
+
+.texto1 h2 {
+    margin: 30px;
+}
+
+.texto1 p{
+    mmargin: 10px 0; /* Espacio entre los párrafos */
+  font-size: 18px; /* Tamaño del texto */
+  max-width: 80%; /* Ancho máximo */
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service {
+    width: calc(50% - 40px);
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.service .description {
+    display: none;
+    color: #666;
+    margin-top: 10px;
+}
+
+.service:hover .description {
+    display: block;
+}
+
+.carousel {
+    width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  }
+
+
+
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    flex: 0 0 auto;
+  }
+  .carousel img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}
+
+.custom-rectangle {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Alinear elementos verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+}
+
+.custom-rectangle p {
+    font-size: 30px;
+}
+
+.custom-rectangle img {
+  width: 100%; /* Ajusta el tamaño de la imagen dentro del rectángulo */
+  max-width: 600px; /* Ancho máximo */
+}
+
+.custom-rectangle p {
+  margin: 10px 0; /* Espacio entre los párrafos */
+}
