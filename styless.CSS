@@ -22,9 +22,9 @@ body {
 }
 
 .texto1 p{
-    mmargin: 10px 0; /* Espacio entre los párrafos */
-  font-size: 18px; /* Tamaño del texto */
-  max-width: 80%; /* Ancho máximo */
+    mmargin: 10px 0; /* Espacio entre los pÃ¡rrafos */
+  font-size: 18px; /* TamaÃ±o del texto */
+  max-width: 80%; /* Ancho mÃ¡ximo */
 }
 
 .services {
@@ -109,10 +109,10 @@ body {
 }
 
 .custom-rectangle img {
-  width: 100%; /* Ajusta el tamaño de la imagen dentro del rectángulo */
-  max-width: 600px; /* Ancho máximo */
+  width: 100%; /* Ajusta el tamaÃ±o de la imagen dentro del rectÃ¡ngulo */
+  max-width: 600px; /* Ancho mÃ¡ximo */
 }
 
 .custom-rectangle p {
-  margin: 10px 0; /* Espacio entre los párrafos */
+  margin: 10px 0; /* Espacio entre los pÃ¡rrafos */
 }
